@@ -2,8 +2,11 @@
 
 A Reimplementation of the paper https://yichengwu.github.io/flare-removal/
 
-## To train
-``python -m flare_removal.python.train \ --train_dir="A:\google-research\google-research-master\flare_removal\train4" \ --scene_dir="A:\google-research\google-research-master\flare_removal\scene2" \ --flare_dir="A:\google-research\google-research-master\flare_removal\lens-flare"``
+## To Train
+``python -m python.train \ --train_dir=training_out \ --scene_dir=input_data_set \ --flare_dir=input_flare_images``
 
-## TO Remove flare
-``python -m flare_removal.python.remove_flare \ --ckpt="A:\google-research\google-research-master\flare_removal\train4\model"  \ --input_dir="A:\google-research\google-research-master\flare_removal\test" \ --out_dir="A:\google-research\google-research-master\flare_removal\out13"``
+## To Remove flare
+``python -m python.remove_flare \ --ckpt=model_location  \ --input_dir=test_images_folder \ --out_dir=output_folder``
+
+
+
